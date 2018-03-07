@@ -1,0 +1,95 @@
+<!--
+     Course: Componentes de BootStrap 4
+     By: OpenWebinars.net
+     File: popover.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Plantilla HTML con los enlaces necesarios para el resto del curso
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Componente Popover</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Course CSS -->
+    <link rel="stylesheet" ref="styles.css" />
+  </head>
+  <body>
+
+    <div class="container mt-5">
+
+      <!-- ESTRUCTURA GENERAL CON LAS CLASES NECESARIOS -->
+      <div class="row">
+        <div class="btn btn-danger mt-5"
+             data-toggle="popover"
+             title="Título del bocadillo"
+             data-content="Explicación o aclaración sobre el el elemento">
+             Muestra el bocadillo
+        </div>
+      </div>
+
+      <!-- LAS 4 POSICIONES DLE BOCADILLO -->
+      <div class="row">
+        <div class="btn btn-warning mt-5"
+             data-toggle="popover"
+             title="Bocadillo arriba"
+             data-content="Explicación o aclaración sobre el el elemento"
+             data-placement="top">
+             Muestra el bocadillo
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn btn-primary mt-5"
+             data-toggle="popover"
+             title="Bocadillo derecha o por defecto"
+             data-content="Explicación o aclaración sobre el el elemento"
+             data-placement="right">
+             Muestra el bocadillo
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn btn-info mt-5"
+             data-toggle="popover"
+             title="Bocadillo abajo"
+             data-content="Explicación o aclaración sobre el el elemento"
+             data-placement="bottom">
+             Muestra el bocadillo
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="btn btn-dark mt-5"
+             data-toggle="popover"
+             title="Bocadillo izquierda"
+             data-content="Explicación o aclaración sobre el el elemento"
+             data-placement="left">
+             Muestra el bocadillo
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+      //Muy importante, para que otros estilos no interfieran con el PopOver
+      //y este funcione correctamente
+      $(function () {
+        $('.btn').popover({
+          container: 'body'
+        })
+      });
+    </script>
+
+  </body>
+</html>

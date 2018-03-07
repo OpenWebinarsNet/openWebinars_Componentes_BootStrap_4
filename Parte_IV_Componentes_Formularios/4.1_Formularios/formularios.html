@@ -1,0 +1,138 @@
+<!--
+     Course: Maquetando con BootStrap 4
+     By: OpenWebinars.net
+     File: formularios.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción:
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formularios en BootStrap 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Course CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-8 border">
+            <h1 class="text-center">Formulario de Login Inline</h1>
+            <form class="form-inline">
+                <div class="form-group mr-3">
+                  <label class="col-label-sm">Usuario:</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="Username" />
+                </div>
+                <div class="form-group mr-3">
+                  <label class="col-label-sm">Password:</label>
+                  <input type="password" class="form-control form-control-sm" placeholder="Contraseña" />
+                </div>
+                <input type="submit" class="btn btn-primary mr-3 mb-3" value="Entrar" />
+            </form>
+          </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 border">
+          <h1 class="text-center">Formulario de Registro</h1>
+          <form>
+                <div class="form-group">
+                  <label class="col-label-sm">Usuario:</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="Username" required />
+                </div>
+                <div class="form-group">
+                  <label class="col-label-sm">Email:</label>
+                  <input type="email" class="form-control form-control-sm" placeholder="Username" required/>
+                </div>
+                <div class="form-group">
+                  <label class="col-label-sm">Contraseña:</label>
+                  <input type="password" class="form-control form-control-sm" placeholder="Username" required />
+                </div>
+                <div class="form-check form-check-inline ml-4">
+                  <input type="radio" name="sexo" class="form-check-input" value="h" />
+                  <label class="form-check-label">Hombre</label>
+                </div>
+                <div class="form-check form-check-inline ml-4">
+                  <input type="radio" name="sexo" class="form-check-input" value="m" />
+                  <label class="form-check-label">Mujer</label>
+                </div>
+                <div class="form-group">
+                  <label class="col-label-sm">Seleccionar foto de perfil:</label>
+                  <input type="file" class="form-control-file" />
+                </div>
+                <div class="text-right mb-3">
+                  <input type="submit" value="Registrar" class="btn  btn-primary" />
+                </div>
+              </div>
+          </form>
+        </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 border">
+          <form class="validar" novalidate>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="email" class="form-control" required>
+              <div class="valid-feedback">
+                Todo parece correcto
+              </div>
+              <div class="invalid-feedback">
+                Debe Introducir un correo
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" required>
+              <div class="valid-feedback">
+                OK
+              </div>
+              <div class="invalid-feedback">
+                Contraseña Incorrecta
+              </div>
+            </div>
+            <button class="btn btn-primary mb-3" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        //Modo Estricto
+        'use strict';
+
+        // Cuando se acaba de cargar la página
+        window.addEventListener('load', function() {
+
+          //Seleccionamos los formularios que quiero validar
+          var forms = document.getElementsByClassName('validar');
+          console.log(forms.length);
+          // Los recorro y evito que se manden los datos
+          var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+          });
+        }, false);
+
+      })();
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

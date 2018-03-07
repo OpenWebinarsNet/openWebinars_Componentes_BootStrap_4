@@ -1,0 +1,70 @@
+<!--
+     Course: Componentes de BootStrap 4
+     By: OpenWebinars.net
+     File: scrollspy.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Componente BootStrap 4 ScrollSpy
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Componente BootStrap 4 ScrollSpy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Course CSS -->
+    <link rel="stylesheet" ref="styles.css" />
+    <style>
+        .ejemploscroll {
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group" id="navegacion">
+                    <li class="list-group-item" data-target="#s1">Sección 1</li>
+                    <li class="list-group-item" data-target="#s2">Sección 2</li>
+                    <li class="list-group-item" data-target="#s3">Sección 3</li>
+                    <li class="list-group-item" data-target="#s4">Sección 4</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div data-spy="scroll" data-target="#navegacion" class="ejemploscroll">
+                    <h1 id="s1">Sección 1</h1>
+                    <p>LoremOccaecat mollit enim non ullamco sunt exercitation et sit labore. Cillum elit magna voluptate sunt deserunt est irure. Nostrud commodo exercitation dolore enim voluptate sit laborum laboris aute. Id laborum anim irure sint consectetur
+                        ullamco ullamco irure qui minim ea. Exercitation sint ut ex magna culpa elit duis officia ad sit. Deserunt exercitation tempor quis ut. Exercitation eu aliqua labore magna duis esse in elit ullamco qui est quis ut proident.</p>
+                    <h1 id="s2">Sección 2</h1>
+                    <p>LoremOccaecat mollit enim non ullamco sunt exercitation et sit labore. Cillum elit magna voluptate sunt deserunt est irure. Nostrud commodo exercitation dolore enim voluptate sit laborum laboris aute. Id laborum anim irure sint consectetur
+                        ullamco ullamco irure qui minim ea. Exercitation sint ut ex magna culpa elit duis officia ad sit. Deserunt exercitation tempor quis ut. Exercitation eu aliqua labore magna duis esse in elit ullamco qui est quis ut proident.</p>
+                    <h1 id="s3">Sección 3</h1>
+                    <p>LoremOccaecat mollit enim non ullamco sunt exercitation et sit labore. Cillum elit magna voluptate sunt deserunt est irure. Nostrud commodo exercitation dolore enim voluptate sit laborum laboris aute. Id laborum anim irure sint consectetur
+                        ullamco ullamco irure qui minim ea. Exercitation sint ut ex magna culpa elit duis officia ad sit. Deserunt exercitation tempor quis ut. Exercitation eu aliqua labore magna duis esse in elit ullamco qui est quis ut proident.</p>
+                    <h1 id="s4">Sección 4</h1>
+                    <p>LoremOccaecat mollit enim non ullamco sunt exercitation et sit labore. Cillum elit magna voluptate sunt deserunt est irure. Nostrud commodo exercitation dolore enim voluptate sit laborum laboris aute. Id laborum anim irure sint consectetur
+                        ullamco ullamco irure qui minim ea. Exercitation sint ut ex magna culpa elit duis officia ad sit. Deserunt exercitation tempor quis ut. Exercitation eu aliqua labore magna duis esse in elit ullamco qui est quis ut proident.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

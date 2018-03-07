@@ -1,0 +1,74 @@
+<!--
+     Course: Componentes de BootStrap 4
+     By: OpenWebinars.net
+     File: buttons.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Componentes Buttons y ButtonsGroups
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Componentes Buttons y ButtonsGroups</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Course CSS -->
+    <link rel="stylesheet" ref="styles.css" />
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <button class="btn btn-primary btn-lg mb-5">Botón 1</button>
+      <button class="btn btn-success btn-block">Botón 2</button>
+
+      <!--Simulando un Radio Group -->
+      <div class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="opA" > Opción A
+        </label>
+        <label class="btn btn-primary active">
+          <input type="radio" name="options" id="opB" checked> Opción B
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="opC"> Opción C
+        </label>
+      </div>
+
+      <!-- BOTONERA CON GRUPOS DE BOTONES -->
+      <div class="btn-toolbar mt-5">
+        <div class="btn-group mr-3">
+          <button type="button" class="btn btn-primary">G1B1</button>
+          <button type="button" class="btn btn-primary">G1B2</button>
+          <button type="button" class="btn btn-primary">G1B3</button>
+        </div>
+        <div class="btn-group mr-3">
+          <button type="button" class="btn btn-warning">G21B1</button>
+          <button type="button" class="btn btn-warning">G2B2</button>
+          <button type="button" class="btn btn-warning">G2B3</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">G3B1</button>
+          <button type="button" class="btn btn-danger">G3B2</button>
+          <button type="button" class="btn btn-danger">G3B3</button>
+        </div>
+      </div>
+
+      <div class="btn-group btn-group-vertical mt-5">
+        <button type="button" class="btn btn-info">V1</button>
+        <button type="button" class="btn btn-info">V2</button>
+        <button type="button" class="btn btn-info">V3</button>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
